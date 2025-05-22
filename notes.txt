@@ -1,0 +1,25 @@
+seems like despite trying different generation models semantic performance wont grow above 0.3. Perhaps it's reasonable to focus on the ranking part
+
+train a cross-encoder reranker to mimic GPT-4 judgement
+
+try LLAMA and GPT4 as generators
+
+Recall@k as a performance measure for the retriever (GPT4 ground truth)
+
+t5-base
+Metrics:
+exact_match: 0.0000
+rougeL: 0.2684
+bertscore_f1: 0.8774
+perplexity: 8.1236
+
+
+-----
+
+extensions: speech to text and text to speech
+
+try more organized prompts when fine tuning
+
+add time as performance metrics
+
+train a generator on plain text, without the ranking 
